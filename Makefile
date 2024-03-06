@@ -2,8 +2,6 @@
 
 env: 
 	cp -n .env.example .env
-env-w:
-	cp .env.example .env
 
 key:
 	docker compose exec -it app php artisan key:generate

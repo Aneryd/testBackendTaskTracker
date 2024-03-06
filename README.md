@@ -12,7 +12,7 @@ DB_PASSWORD=password
 
 Запуск с помощью Makefile:
 ```sh
-make env - для создания и копировния из .env.example в .env, для Windows - make env-w
+make env - для создания и копировния из .env.example в .env, для Windows - cp .env.example .env
 make build - для билда контейнеров
 make up - для поднятия контейнеров
 make vendor - для composer install
@@ -35,4 +35,9 @@ docker-compose exec -it app php artisan migrate:refresh --seed - для запу
 http://localhost/api/
 tasks - задачи (get, post, put, delete)
 statuses - статусы (get, post, put, delete)
+
+Параматры для фильтрации:
+status_id - id статуса
+date_from - дата от (2024-03-06)
+date_to - дата до (2024-03-06)
 ```
